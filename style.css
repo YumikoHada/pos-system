@@ -1,0 +1,48 @@
+body {
+	background-image: url(images/sky.jpg);
+	background-size: cover;
+}
+.card{
+	width: 200px;
+	float: left;
+	margin: 10px;
+}
+#list {
+	background-color: #ffffff;
+	font-size: 23px;
+}
+#cart-items {
+	margin: 5%;
+}
+#cart-items .card{
+	width: 40%;
+	float: left;
+	margin: 10px;
+}
+#cart-items .card-body{
+	padding: 0.5rem;
+}
+#cart-items .card-body p{
+	font-size: 15px;
+}
+.cart-item-control {
+	float: right;
+}
+.cart-item-control:hover {
+	color: 	#0000FF;
+}
+#totalamount {
+	background-color: #e3fff2;
+}
+#total-num {
+	text-align: center;
+}
+#cartbutton1, #cartbutton2{
+	text-align: center;
+}
+#pay {
+	text-align: left;
+}
+.btn btn-danger {
+	width: 100px;
+}

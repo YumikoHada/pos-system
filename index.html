@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, world!</h1>
+      <div class="row">
+        <div class="col-8" id="menu">       
+          <!-- 2. JSの配列を作成したら、card(配列部分)を削除し、オブジェクトの一つをJSの配列の下にコピー(テンプレートとして) -->
+          <!-- <div class="card">
+            <img src="images/enchantedriver.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Enchanted River<br>
+                Price</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/kalanggmanisland.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Kalanggman island<br>
+                Price</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/siargaoisland.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Siargao island<br>
+                Price</p> 
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/pagudbudbeach.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Pagubud Beach<br>
+                Price</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/batanesisland.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Batanes island<br>
+                Price</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/amanpulo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Amanpulo<br>
+                Price</p>
+            </div>
+          </div> -->
+                    
+        </div>
+        <div class="col-4" id="list">
+          <div id="cart-items">Your Cart
+            <div class="row" id="cart-details">
+<!-- 11.cartのcard部分を削除、card一枚分をjavascriptのcart部分にテンプレートとしてコピー -->
+              <!-- <div class="card">
+                <img src="images/enchantedriver.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text">Enchanted River<br>
+                  Price</p></div>
+                <div class="cart-item-control"><a href="#">X</a></div>
+              </div> 
+            
+              <div class="card">
+                <img src="images/kalanggmanisland.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Kalanggman island<br>
+                    Price</p></div>
+                  <div class="cart-item-control"><a href="#">X</a></div>
+              </div>
+              <div class="card">
+                <img src="images/siargaoisland.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Siargao island<br>
+                    Price</p></div>
+                  <div class="cart-item-control"><a href="#">X</a></div>
+              </div>
+
+              <div class="card">
+                <img src="images/pagudbudbeach.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Pagubud Beach<br>
+                    Price</p></div>
+                  <div class="cart-item-control"><a href="#">X</a></div>
+              </div>
+
+              <div class="card">
+                <img src="images/batanesisland.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Batanes island<br>
+                    Price</p></div>
+                  <div class="cart-item-control"><a href="#">X</a></div>
+              </div>
+            
+
+              <div class="card">
+                <img src="images/amanpulo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Amanpulo<br>
+                    Price</p></div>
+                  <div class="cart-item-control"><a href="#">X</a></div>
+              </div> -->
+            </div>
+                   
+          <div id="totalamount">
+<!-- 12.javascriptにTOTALを記載したので、TOTALの表示を削除 -->
+            <div id="total-num"><!-- Total --></div>
+          </div>
+        </div>
+        <div class="row" id="cotrols">
+            <div class="col-6" id="cartbutton1">
+<!-- 19.button部分をaタグ(Book)部分に置き換える -->
+              <!-- <a href="#" class="btn btn-primary">Book</a> -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Book
+            </button>
+<!-- 18.Bookがクリックされたらポップアップ表示されるようにBootstrapのModalをコピー -->
+              <!-- Button trigger modal -->
+<!-- 19.button部分をaタグ(Book)部分に置き換える -->
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+          </button> -->
+
+<!-- 20.Modal部分を書き換える -->
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thank You!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="pay">
+                  <h1>Pay</h1>
+                  <h2 id="pay-amount">PHP 0.00</h2>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+            </div>
+            <div class="col-6" id="cartbutton2">
+<!-- 17.リセットボタンがクリックされた時の機能(onclick)を追加 -->
+              <a href="#" class="btn btn-danger" onclick="reset()">Reset</a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+// 1.htmlの作成終了後、配列を作成
+    var items = [
+        {
+          name: 'Enchanted River',
+          image: 'enchantedriver.png',
+          price: '1000'
+        },
+        {
+          name: 'Kalanggman island',
+          image: 'kalanggmanisland.png',
+          price: '2000'      
+        },
+        {
+          name: 'Siargao island',
+          image: 'siargaoisland.png',
+          price: '3000'      
+        },
+        {
+          name: 'Pagubud Beach',
+          image: 'pagudbudbeach.png',
+          price: '4000'      
+        },
+        {
+          name: 'Batanes island',
+          image: 'batanesisland.png',
+          price: '5000'      
+        },
+        {
+          name: 'Amanpulo',
+          image: 'amanpulo.png',
+          price: '6000'      
+        }
+        ]
+
+// 7.カードがクリックされたらカートに追加するためのvalueを作成(最初は空、配列のオブジェクトがカートにコピーされる)
+var cart = [];
+
+// 3. forループを作成(今回はvending machineからコピー) htmlは空欄から始める
+// var html='';
+// for(var i=0; i<items.length; i++){
+//   html = html+ '';
+// }
+// document.getElementById('menu').innerHTML = html;
+// 10.カードがクリックされたらカートにカードを追加するfunctuionを作成
+// "menu"のforループをコピー
+var html='';
+for(var i=0; i<items.length; i++){
+// 3.1. 最初のラインをforループにコピー
+// 5.各カードがクリックされたらカートに追加できるように"onclick"を追記、consoleに各カードとaddIrtem()が合っているか確認
+  html += '<div class="card" onclick="addItem('+ i +')">';
+// 3.2. 次の行をforループにコピー
+// 4.個別に記載していたイメージ、名前、プライスなどを配列.プロパティ名に変更する。
+// 4.1.imageを配列から取り出すように書き換える。
+  html += '<img src="images/'+ items[i].image +'" class="card-img-top" alt="...">';
+// 3.3. 次の行をforループにコピー
+  html += '<div class="card-body">';
+// 3.4. 次の行をforループにコピー(要素ごとに)
+  html += '<p class="card-text">';
+// 4.2.nameを配列から取り出すように書き換える。
+  html += ''+ items[i].name +'<br>';
+// 4.3.priceを配列から取り出すように書き換える。
+  html += ''+ items[i].price +'';
+// 3.5. 各タグを閉じていく（forループにコピー）
+  html += '</p>';
+  html += '</div>';
+  html += '</div>';
+}
+document.getElementById('menu').innerHTML = html;
+
+// 2.1. htmlのカード部分をコピー、forループの中に使用する
+    // 3.1. 最初のラインをforループにコピー
+    // <div class="card">
+    // 3.2. 次の行をforループにコピー
+    //   <img src="images/enchantedriver.png" class="card-img-top" alt="...">
+    //   3.3. 次の行をforループにコピー
+    //   <div class="card-body">
+    //   3.4. 次の行をforループにコピー(要素ごとに)
+    //     <p class="card-text">Enchanted River<br>Price
+    //   3.5. 各タグを閉じていく（forループにコピー）
+    //     </p>
+    //   </div>
+    // </div>   
+
+
+// 6.カードがクリックされた時のfunctionを作成 addItem(x)のxは任意の文字。クリックされた対象のカードを指す。
+// 6.1.カードがクリックされた時のfunctionが機能するか'alert(x);'→'console.log(x);'を設置して確認
+// グローバルバリューに配列を設置しているので、配列からオブジェクトを取り出せるか'console.log(items[x].name)''console.log(items[x].price)'を記載して確認
+  function addItem(x){
+// 8.カートに追加するためのfunctionを記載。"js add to array"で検索→array.push(element);
+// consoleで確認。consoleに"cart"を記載。最初は空。カードをいくつかクリック後にconsoleに"cart"を記載。クリックした分の数字がconsoleに出る。
+    cart.push(items[x]);
+// 9.カートのトータルを表示するfunctionを記載。
+// 16.updateCartを作成したことにより、var total = 0.00からdocument.getElementByIdまでを削除、updateCart()を追記
+    updateCart();
+//     var total = 0.00;
+//     for(var i=0; i<cart.length; i++){
+//       total = total + parseFloat(cart[i].price);
+//       }
+// // 12.カードクリック後にTOTALが表示されるように書き換え、html部分のTOTALを削除。
+//     document.getElementById('total-num').innerHTML = 'TOTAL: PHP'+ total+ '.00';
+
+// // 10.カードがクリックされたらカートにカードを追加するfunctuionを作成
+// // "menu"のforループをコピーし、html+=<div>の部分を削除
+// // 11.htmlのcard部分をコピー、javascriptとして書き換える。
+//     var html='';
+//     for(var i=0; i<cart.length; i++){
+//       html += '<div class="card">';
+//       html += '<img src="images/'+ cart[i].image +'" class="card-img-top" alt="...">';
+//       html += '<div class="card-body">';
+//       html += '<p class="card-text">'+ cart[i].name +'<br>';
+//       html += ''+ cart[i].price +'</p>';
+//       html += '<div class="cart-item-control" onclick="removeItem('+ i +')">x</div>';
+//       html += '</div>';
+//       html += '</div>';
+//     }
+//     document.getElementById('cart-details').innerHTML = html;
+
+  }
+
+// 13.カートのアイテムのxをクリックしたらカートから削除するfunctionを作成。addItemのfunctionを全てコピー、function名をremoveItemに変更。"js array remove index"でarrayから削除する機能を検索
+  function removeItem(x){
+    cart.splice(x,1);
+// 15.var total = 0.00からdocument.getElementByIdまでコピー
+// 16.updateCartを作成したことにより、var total = 0.00からdocument.getElementByIdまでを削除、updateCart()を追記
+    updateCart();
+    // var total = 0.00;
+    // for(var i=0; i<cart.length; i++){
+    //   total = total + parseFloat(cart[i].price);
+    //   }
+    // document.getElementById('total-num').innerHTML = 'TOTAL: PHP'+ total+ '.00';
+
+    // var html='';
+    // for(var i=0; i<cart.length; i++){
+    //   html += '<div class="card">';
+    //   html += '<img src="images/'+ cart[i].image +'" class="card-img-top" alt="...">';
+    //   html += '<div class="card-body">';
+    //   html += '<p class="card-text">'+ cart[i].name +'<br>';
+    //   html += ''+ cart[i].price +'</p>';
+    //   html += '<div class="cart-item-control" onclick="removeItem('+ i +')">x</div>';
+    //   html += '</div>';
+    //   html += '</div>';
+    // }
+    // document.getElementById('cart-details').innerHTML = html;
+
+  }
+
+// 14.別のfunctionを作成、updateCartのfunctionを作成することで、上に記載の重複部分(addItem,removeItem)を削除
+  function updateCart(){
+// 15.var total = 0.00からdocument.getElementByIdまでコピペ
+    var total = 0.00;
+    for(var i=0; i<cart.length; i++){
+      total = total + parseFloat(cart[i].price);
+      }
+    document.getElementById('total-num').innerHTML = 'TOTAL: PHP'+ total+ '.00';
+// 21.Modalボックスに合計が表示されるように、document.getElementById部分をコピー、idを書き換える
+    document.getElementById('pay-amount').innerHTML = 'PHP'+ total+ '.00';
+
+    var html='';
+    for(var i=0; i<cart.length; i++){
+      html += '<div class="card">';
+      html += '<img src="images/'+ cart[i].image +'" class="card-img-top" alt="...">';
+      html += '<div class="card-body">';
+      html += '<p class="card-text">'+ cart[i].name +'<br>';
+      html += ''+ cart[i].price +'</p>';
+      html += '<div class="cart-item-control" onclick="removeItem('+ i +')">x</div>';
+      html += '</div>';
+      html += '</div>';
+    }
+    document.getElementById('cart-details').innerHTML = html;
+  }
+
+// 17.リセットボタンがクリックされた時のfunctionを作成
+    function reset(){
+      // location.reload();←簡単な方法
+      cart=[];
+      updateCart();
+    }
+
+    
+
+
+
+
+</script>
+  </body>
+</html>
