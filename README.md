@@ -3,7 +3,7 @@ Simple offline E-commerce system.
 
 # Image
 
-![alt text](/desktop/batch5/0620(JS/Onlinebanking/project)/pos/pos-system.png?raw=true)
+![alt text](https://user-images.githubusercontent.com/52945405/62787446-4cd18a00-baf7-11e9-862f-d2d76b372c9a.png)
 
 
 # Tech/framework used
